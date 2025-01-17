@@ -1,17 +1,19 @@
-<!DOCTYPE html>
+---
+import '../styles/global.css'
+import UCCLogo from '../images/UCC_logo.png'
+---
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <title>UCC | Inicio</title>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="header">
             <nav class="navbar" id="navbar">
                 <a href="index.html">
-                    <img style="width: 70px;" src="UCC_original-removebg-preview.png">
+                    <img style="width: 70px;" src={UCCLogo.src} alt="UCC Logo">
                 </a>
                 <div class="menu">
                     <a href="launches.html">Lanzamientos</a>

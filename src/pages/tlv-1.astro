@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+---
+import '../styles/global.css'
+import UCCLogo from '../images/UCC_logo.png'
+import invertedImage from '../images/inverted_image.png'
+---
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UCC | Próximo lanzamiento</title>
-        <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <style>
             table {
@@ -32,7 +35,7 @@
     <body>
         <nav class="navbar" id="navbar">
             <a href="index.html">
-                <img style="width: 70px;" src="UCC_original-removebg-preview.png">
+                <img style="width: 70px;" src={UCCLogo.src} alt="UCC Logo">
             </a>
             <div class="menu">
                 <a href="launches.html">Lanzamientos</a>
@@ -42,7 +45,11 @@
         </nav>
 
         <div>
-            <p class="box" style="margin-top: 50px">TLV-1 (Test Launch Vehicle 1) es un prototipo de lanzamiento liviano, propulsado por una mezcla de combustible sólido no determinada, pero incapaz de poner cualquier carga en órbita.<br><br>El principal objetivo de la misión radica en procesar datos y enviar telemetría de aviónica para próximos prototipos, ya que todos poseerán la misma computadora de vuelo que los guiará durante el lanzamiento, destacada por su simplicidad y efectividad.<br><br>Se evaluarán las capacidades aerodinámicas, físicas, químicas, mecánicas y electrónicas, para integrar una tecnología mejor para los siguientes lanzamientos.<br><br>Aunque no esté disponible una fecha de lanzamiento oficial, estimamos oportunidades potenciales en la segunda mitad de 2025.</p>
+            <p class="box" style="margin-top: 50px">TLV-1 (Test Launch Vehicle 1) es un prototipo de lanzamiento liviano, propulsado por una mezcla de combustible sólido no 
+                determinada, pero incapaz de poner cualquier carga en órbita.<br><br>El principal objetivo de la misión radica en procesar datos y enviar telemetría de aviónica para 
+                próximos prototipos, ya que todos poseerán la misma computadora de vuelo que los guiará durante el lanzamiento, destacada por su simplicidad y efectividad.<br><br>
+                Se evaluarán las capacidades aerodinámicas, físicas, químicas, mecánicas y electrónicas, para integrar una tecnología mejor para los siguientes lanzamientos.<br><br>
+                Aunque no esté disponible una fecha de lanzamiento oficial, estimamos oportunidades potenciales en la segunda mitad de 2025.</p>
             <hr>
             <br>
             <br>
@@ -140,7 +147,7 @@
             </script>
 
             <!-- Imagen -->
-            <img style="display: block;margin-left: auto;margin-right: auto;width: 38%;" src="inverted_image.png">
+            <img style="display: block;margin-left: auto;margin-right: auto;width: 38%;" src={invertedImage.src} alt="Inverted Image">
         </div>
 
         <!-- esencial en todas las páginas (excepto la inicial) para añadir funcionalidades de animación de desplazamiento a la barra de navegación -->
